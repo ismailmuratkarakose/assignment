@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'"/>
+<form action="#" th:action="@{'/delete/{id}'(id=1)}" th:method="delete" >
+    <input type="hidden" name="_method" value="delete" />
+    <button type="submit" id="submitButton"> </button>
+</form>
+</body>
+</html>
